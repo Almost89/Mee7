@@ -56,5 +56,16 @@ async def pause(ctx):
 async def stop(ctx):
     await ctx.send("no u")
 
+# Gib command
+@bot.command(name = "gib", help = "gib da user what they deverseeey")
+async def gib(ctx):
+    dm_channel = ctx.anthor.dm_channel
+    if not dm_channel:
+        dm_channel = ctx.anthor.create_dm()
+
+    for i = 0, range(51):
+        await dm_channel.send(content = "eat spam", file = discord.File("https://media0.giphy.com/media/xdnytp8742kg0/giphy.gif?cid=ecf05e47ugoxffbpbfjk9i34t2v9nfmtsfqcvwyn4wh13agj&rid=giphy.gif&ct=g"))
+
+
 if __name__ == "__main__":
     bot.run(DISCORD_TOKEN)
