@@ -48,7 +48,7 @@ async def play(ctx):
         await ctx.send("The bot is not connected to a voice channel.")
 
 # Pause + stop command
-@bot.command(name='pause', help='This command pauses the song')
+@bot.command(name='pause', help = "it's ~~not~~ in the name")
 async def pause(ctx):
     await ctx.send("never!")
 
